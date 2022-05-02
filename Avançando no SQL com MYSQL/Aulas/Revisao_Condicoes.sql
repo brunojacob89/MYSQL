@@ -1,0 +1,22 @@
+SELECT * FROM tabela_de_produtos WHERE SABOR = 'MANGA'
+OR TAMANHO = '470 ML';
+
+SELECT * FROM tabela_de_produtos WHERE SABOR = 'MANGA'
+AND TAMANHO = '470 ML';
+
+SELECT * FROM tabela_de_produtos WHERE NOT (SABOR = 'MANGA'
+OR TAMANHO = '470 ML');
+
+SELECT * FROM tabela_de_produtos WHERE NOT (SABOR = 'MANGA'
+AND TAMANHO = '470 ML');
+
+SELECT * FROM tabela_de_produtos WHERE  SABOR = 'MANGA'
+AND NOT (TAMANHO = '470 ML');
+
+SELECT * FROM tabela_de_produtos WHERE  SABOR IN ('LARANJA','MANGA');
+
+SELECT*FROM tabela_de_clientes WHERE CIDADE IN ('RIO DE JANEIRO' , 'SAO PAULO')
+AND IDADE >= 19;
+
+SELECT*FROM tabela_de_clientes WHERE CIDADE IN ('RIO DE JANEIRO' , 'SAO PAULO')
+AND (IDADE >= 19 AND IDADE <=24);

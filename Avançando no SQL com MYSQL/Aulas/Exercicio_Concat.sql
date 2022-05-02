@@ -1,0 +1,2 @@
+SELECT NOME, CONCAT(ENDERECO_1, ' ', BAIRRO, ' ', CIDADE, ' ', ESTADO) AS COMPLETO
+FROM tabela_de_clientes

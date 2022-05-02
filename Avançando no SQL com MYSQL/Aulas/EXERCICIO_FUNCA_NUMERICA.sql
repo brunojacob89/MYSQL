@@ -1,0 +1,6 @@
+SELECT year(DATA_VENDA), FLOOR (sum(IMPOSTO * (QUANTIDADE*PRECO))) 
+FROM notas_fiscais NF 
+INNER JOIN itens_notas_fiscais INF
+ON NF.NUMERO = INF.NUMERO
+WHERE year(DATA_VENDA) = '2016'
+group by YEAR(DATA_VENDA);
